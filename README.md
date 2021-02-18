@@ -10,10 +10,10 @@ npm i koa2 -S
 npm i koa-router
 ```
 
-### 安装
+### 安装(自选)
 Koa需要 node v7.6.0或更高版本来支持ES2015、异步方法
 ```bash
 nvm install 7
 npm i koa
-node my-koa-app.js
+node app.js
 ```
