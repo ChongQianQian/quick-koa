@@ -1,7 +1,7 @@
 /*
  * @Author: 云乐
  * @Date: 2021-02-18 16:38:03
- * @LastEditTime: 2021-02-18 17:35:28
+ * @LastEditTime: 2021-02-19 10:15:38
  * @LastEditors: 云乐
  * @Description: 读取文本内容，存储到数据库中
  */
@@ -9,6 +9,37 @@
 const fs = require("fs");
 const path = require("path");
 const { query } = require("./db");
+
+//必须先执行zixun的sql，才可以给article新增数据
+// const data = [
+//   {
+//     id: 0,
+//     title: "0个",
+//     subtitle: "0个别名",
+//     icon: "images/icon_0.png",
+//   },
+//   {
+//     id: 1,
+//     title: "1个",
+//     subtitle: "1个别名",
+//     icon: "images/icon_1.png",
+//   },
+//   {
+//     id: 2,
+//     title: "2个",
+//     subtitle: "2个别名",
+//     icon: "images/icon_2.png",
+//   },
+// ];
+// data.map((val) => {
+//   let sql = `insert into zixun values (${(val.id)},'${val.title}','${
+//     val.subtitle
+//   }','${val.icon}')`;
+//   query(sql,(err,data)=>{
+//     if(err) throw err;
+//     console.log(data)
+//   })
+// });
 
 function readFileFn(arg) {
   return new Promise((resolve, rejects) => {
