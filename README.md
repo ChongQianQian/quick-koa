@@ -34,5 +34,14 @@ app.use(router.routes(),router.allowedMethods())
 ### 读取静态资源文件
 ```bash
 npm i koa-static
+```
+
+### 常见包介绍
+```bash
+//koa-bodyparser 用于获取post请求数据
+npm i koa-bodyparser --save
+
+//jsonwetoken 用于生成token
+npm i jsonwebtoken --save
 
 ```
