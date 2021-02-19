@@ -17,3 +17,8 @@ nvm install 7
 npm i koa
 node app.js
 ```
+
+### mysql
+```bash
+yarn add mysql
+```
