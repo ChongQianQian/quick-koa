@@ -22,3 +22,11 @@ node app.js
 ```bash
 yarn add mysql
 ```
+
+### 允许跨域问题
+```bash
+npm i koa2-cors
+
+app.use(cors())
+app.use(router.routes(),router.allowedMethods())
+```
