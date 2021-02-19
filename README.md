@@ -30,3 +30,9 @@ npm i koa2-cors
 app.use(cors())
 app.use(router.routes(),router.allowedMethods())
 ```
+
+### 读取静态资源文件
+```bash
+npm i koa-static
+
+```

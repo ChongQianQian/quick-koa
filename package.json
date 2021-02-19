@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
     "koa2": "^2.0.0-alpha.7",
     "koa2-cors": "^2.0.6",
+    "koa2-static": "^1.0.1",
     "mysql": "^2.18.1"
   }
 }
